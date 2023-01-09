@@ -1,7 +1,12 @@
 /* GLOBAL */
 :root {
   --primary-bg-color: #fff;
+  --main-bg-color: #f6f6f6;
+  --navbar-text-color: #515151;
+  --secondary-bg-color: #295093;
   --text-color: #000;
+  --accent-color: #285193;
+  --primary-font-family: "Rubik", "Arial", sans-serif;
 }
 
 html {
@@ -33,7 +38,7 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
@@ -92,6 +97,16 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+/* BUTTON */
+.button {
+  background-color: var(--primary-bg-color);
+  border: none;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* RETINA DISPLAY */

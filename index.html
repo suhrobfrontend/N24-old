@@ -1,68 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
-    <!-- Favicon -->
-    <!-- <link rel="icon" href=""> -->
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N24 | Bosh sahifa</title>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg">
 
-  <body>
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="site-header__container container">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__container container">
+
+      <div class="site-header__top">
+
         <!-- LOGO -->
         <div class="site-header__logo logo">
-          <a href="#" class="logo__link">
-            <img class="logo__img" src="" alt="" width="" height="" />
+          <a href="index.html" class="logo__link">
+            <img class="logo__img" src="images/logo.svg" alt="N24 logo" width="320" height="40">
           </a>
         </div>
 
-        <!-- SITENAV -->
-        <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link"></a>
-            </li>
-          </ul>
-        </nav>
+        <!-- CURRENCY RATES -->
+        <ul class="currency-rates">
+          <li class="currency-rates__item">
+            <b class="currency-rates__bolder-text">$</b>
+            <span class="currency-rates__text">11284.75</span>
+          </li>
+          <li class="currency-rates__item">
+            <b class="currency-rates__bolder-text">P</b>
+            <span class="currency-rates__text">162.10</span>
+          </li>
+        </ul>
+
+        <!-- SEARCH-BUTTON -->
+        <button class="button search-button">
+          <span class="search-button__inner"></span>
+        </button>
+
+        <!-- LANGUAGE TOGGLER -->
+        <button class="button language-toggler">
+          <div class="language-toggler__inner">РУ</div>
+        </button>
+
+        <!-- SITE-HEADER LINK -->
+        <a class="site-header__link" href="">
+          <span class="site-header__link-inner">Подписатся</span>
+        </a>
+
       </div>
-    </header>
-    <!-- /HEADER -->
-
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero__wrapper container"></div>
-      </section>
-      <!-- /HERO -->
-    </main>
-    <!-- /MAIN CONTENT -->
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="site-footer__container container"></div>
-    </footer>
-    <!-- /FOOTER -->
 
 
-    <!-- SCRIPTS -->
-    <script src="./js/main.js"></script>
-  </body>
+      <!-- SITENAV -->
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Узбекистана</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Мир</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Экономика</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Политика</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Общество</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Технологии</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Спорт</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Культура</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Происшествия</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Туризм</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SITE HEADER ADS -->
+      <aside class="site-header-ads">
+        <a class="site-header-ads__link" href="#">
+          <img class="site-header-ads__img" src="./images/nrg-header-ads.jpg" alt="NRG Reklamasi" width="1200"
+            height="99" srcset="./images/nrg-header-ads.jpg 1x, ./images/nrg-header-ads@2x.jpg 2x">
+        </a>
+      </aside>
+    </div>
+  </header>
+  <!-- /HEADER -->
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__wrapper container"></div>
+    </section>
+    <!-- /HERO -->
+  </main>
+  <!-- /MAIN CONTENT -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__container container"></div>
+  </footer>
+  <!-- /FOOTER -->
+
+
+  <!-- SCRIPTS -->
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
