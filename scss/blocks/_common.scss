@@ -5,7 +5,9 @@
   --navbar-text-color: #515151;
   --secondary-bg-color: #295093;
   --text-color: #000;
+  --footer-color: #fff;
   --accent-color: #285193;
+  --accent-dark: #133c82; 
   --primary-font-family: "Rubik", "Arial", sans-serif;
 }
 
@@ -109,6 +111,18 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* TEG SUB BUTTON */
+.tg-btn {
+  padding: 9px 12px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color .4s ease;
+}
+
 
 /* RETINA DISPLAY */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
