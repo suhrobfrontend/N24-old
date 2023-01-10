@@ -658,9 +658,15 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .notifications {
+    padding: 20px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .notifications {
     flex-direction: column;
+    padding: 15px;
   }
 }
 .notifications::before {
