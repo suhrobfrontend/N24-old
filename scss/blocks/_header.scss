@@ -209,12 +209,11 @@
     flex-direction: column;
     width: 65%;
     height: 100%;
-    padding: 82px 15px 0;
+    padding: 82px 25px 0 15px;
     background-color: var(--primary-bg-color);
     transform: translateX(120%);
     box-shadow: -7px 0 10px rgba(0, 0,0, 0.2);
     justify-content: flex-start;
-    align-items: flex-end;
    }
 
    @media only screen and (max-width: $mobile) {
@@ -235,7 +234,9 @@
    }
 
   @media only screen and (max-width: $tablet) {
-    margin: 5px 0;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--accent-color);
    }
 }
 
