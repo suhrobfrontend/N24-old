@@ -1,7 +1,7 @@
 const elHeaderTogglerBtn = document.querySelector(".site-header__toggler")
-const elSitenavList = document.querySelector(".sitenav__list")
+const elSitenav = document.querySelector(".sitenav")
 
 
 elHeaderTogglerBtn.addEventListener("click", () => {
-  elSitenavList.classList.toggle("sitenav__list--open")
+  elSitenav.classList.toggle("sitenav--open")
 })

@@ -108,6 +108,7 @@ body {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  padding: 22px 0 38px;
 }
 
 /* SCROLL BAR */
@@ -361,13 +362,30 @@ body {
   background-color: var(--primary-bg-color);
   padding: 15px 12px;
   border-radius: 5px;
+  transition: transform 0.4s ease, width 0.4s ease;
 }
 @media only screen and (max-width: 768px) {
   .sitenav {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 25;
+    transform: translate(100%);
+    width: 65%;
   }
+}
+@media only screen and (max-width: 576px) {
+  .sitenav {
+    width: 80%;
+  }
+}
+
+.sitenav--open {
+  transform: translate(0);
+  transition: transform 0.4s ease;
 }
 
 .sitenav__list {
@@ -378,7 +396,6 @@ body {
   font-weight: 500;
   font-size: 19px;
   line-height: normal;
-  transition: transform 0.4s ease, width 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .sitenav__list {
@@ -387,29 +404,13 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .sitenav__list {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 25;
     flex-direction: column;
-    width: 65%;
     height: 100%;
     padding: 82px 25px 0 15px;
     background-color: var(--primary-bg-color);
-    transform: translateX(120%);
     box-shadow: -7px 0 10px rgba(0, 0, 0, 0.2);
     justify-content: flex-start;
   }
-}
-@media only screen and (max-width: 576px) {
-  .sitenav__list {
-    width: 80%;
-  }
-}
-
-.sitenav__list--open {
-  transform: translateX(0);
-  transition: transform 0.4s ease;
 }
 
 .sitenav__item {
@@ -449,6 +450,134 @@ body {
   max-width: 1200px;
   width: 100%;
   height: auto;
+}
+
+.covid-info {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+  padding: 30px 35px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 992px) {
+  .covid-info {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .covid-info {
+    flex-direction: column;
+  }
+}
+.covid-info::before {
+  content: "";
+  display: inline-block;
+  background: url("../../images/icon-covid.png") no-repeat center/contain;
+  background-size: contain;
+  width: 43px;
+  height: 45px;
+  margin-right: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .covid-info::before {
+    margin-right: 0;
+  }
+}
+
+.covid-info__heading {
+  font-weight: 500;
+  margin-right: 60px;
+  font-size: 20px;
+  max-width: 234px;
+  line-height: normal;
+}
+@media only screen and (max-width: 992px) {
+  .covid-info__heading {
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .covid-info__heading {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+.covid-info__list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 992px) {
+  .covid-info__list {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .covid-info__list {
+    flex-direction: column;
+  }
+}
+
+.covid-info__item {
+  padding: 0 24px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-left: 2px solid #f4ccd1;
+}
+@media only screen and (max-width: 768px) {
+  .covid-info__item {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #f4ccd1;
+  }
+}
+.covid-info__item::before {
+  content: "";
+  display: inline-block;
+  background: no-repeat center/contain;
+  background-size: contain;
+  width: 38px;
+  height: 40px;
+  margin-right: 18px;
+}
+.covid-info__item--enfected {
+  border-left-color: #eb5569;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 992px) {
+  .covid-info__item--enfected {
+    border-left: none;
+  }
+}
+.covid-info__item--enfected::before {
+  background-image: url("../images/icon-enfection.svg");
+}
+.covid-info__item--recovered::before {
+  background-image: url("../images/icon-smile.svg");
+}
+.covid-info__item--dead::before {
+  background-image: url("../images/icon-no.svg");
+}
+
+.covid-info__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.covid-info__bold-text {
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 500;
 }
 
 /* SITE-FOOTER */

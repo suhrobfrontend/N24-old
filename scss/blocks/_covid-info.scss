@@ -1,0 +1,126 @@
+.covid-info {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+  padding: 30px 35px;
+  border-radius: 5px;
+
+  
+  @media only screen and (max-width: $tablet-l) {
+   flex-wrap: wrap;
+  }
+  
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  &::before {
+      content: "";
+      display: inline-block;
+      background: url("../../images/icon-covid.png") no-repeat center / contain;
+      background-size: contain;
+      width: 43px;
+      height: 45px;
+      margin-right: 25px;
+
+            
+      @media only screen and (max-width: $tablet) {
+      margin-right: 0;;
+      }
+    }
+}
+.covid-info__heading {
+  font-weight: 500;
+  margin-right: 60px;
+  font-size: 20px;
+  max-width: 234px;
+  line-height: normal;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+.covid-info__list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  @media only screen and (max-width: $tablet-l) {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+.covid-info__item {
+  padding: 0 24px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-left: 2px solid #f4ccd1;
+
+  
+  @media only screen and (max-width: $tablet) {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #f4ccd1;
+  }
+
+  &::before {
+      content: "";
+      display: inline-block;
+      background: no-repeat center / contain;
+      background-size: contain;
+      width: 38px;
+      height: 40px;
+      margin-right: 18px;
+    }
+
+    &--enfected {
+      border-left-color: #eb5569;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      @media only screen and (max-width: $tablet-l) {
+      border-left:  none;
+      }
+
+      &::before {
+        background-image: url("../images/icon-enfection.svg");
+      }
+    }
+
+    &--recovered {
+      &::before {
+        background-image: url("../images/icon-smile.svg");
+      }
+    }
+
+    &--dead {
+      &::before {
+        background-image: url("../images/icon-no.svg");
+      }
+    }
+}
+.covid-info__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.covid-info__bold-text {
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 500;
+}
