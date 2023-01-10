@@ -456,6 +456,9 @@ body {
   color: var(--footer-color);
   background-color: var(--secondary-bg-color);
 }
+.site-footer *:focus {
+  outline-color: var(--footer-color);
+}
 
 /* SITE FOOTER TOP */
 .site-footer__top {

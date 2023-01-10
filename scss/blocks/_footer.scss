@@ -2,6 +2,10 @@
 .site-footer {
   color: var(--footer-color);
   background-color: var(--secondary-bg-color);
+
+  *:focus {
+    outline-color: var(--footer-color);
+  }
 }
 
 /* SITE FOOTER TOP */
