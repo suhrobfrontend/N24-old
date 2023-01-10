@@ -9,8 +9,13 @@
   align-items: center;
 
   
+  @media only screen and (max-width: $tablet) {
+   padding: 20px;
+  }
+  
   @media only screen and (max-width: $mobile) {
    flex-direction: column;
+   padding: 15px;
   }
 
   &::before {
@@ -48,13 +53,15 @@
 }
 
 .notifications__btn {
-  padding: 8px;
+  padding: 8px 12px;
+  margin-left: 15px;
   color: var(--primary-bg-color);
   font-weight: 500;
   font-size: 20px;
   transition: font-size .4s ease, 
     box-shadow 0.3s ease;
-  background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+  background-color: #FE5C28;
+  background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
   
     
   @media only screen and (max-width: $tablet) {
