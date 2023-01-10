@@ -111,6 +111,7 @@ body {
   background-color: var(--primary-bg-color);
   border: none;
   display: flex;
+  white-space: nowrap;
   border-radius: 5px;
   cursor: pointer;
 }

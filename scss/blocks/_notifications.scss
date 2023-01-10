@@ -1,0 +1,73 @@
+.notifications {
+  background: rgba(239, 186, 84, 0.18);
+  width: 100%;
+  padding: 25px 20px;
+  border-radius: 5px;
+  background-color: rgba(239, 186, 84, 0.18);
+  display: flex;
+  align-items: center;
+
+  
+  @media only screen and (max-width: $mobile) {
+   flex-direction: column;
+  }
+
+  &::before {
+      content: "";
+      display: inline-block;
+      background: url("../images/icon-notification.svg") no-repeat center / contain;
+      background-size: contain;
+      width: 31px;
+      height: 35px;
+      margin-right: 17px;
+
+      @media only screen and (max-width: $tablet) {
+        display: none;
+        font-size: 17px;
+      }
+    }
+}
+
+.notifications__heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+  margin-right: auto;
+  transition: font-size .4s ease;
+  
+  @media only screen and (max-width: $tablet) {
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.notifications__btn {
+  padding: 8px;
+  color: var(--primary-bg-color);
+  font-weight: 500;
+  font-size: 20px;
+  transition: font-size .4s ease, 
+    box-shadow 0.3s ease;
+  background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+  
+    
+  @media only screen and (max-width: $tablet) {
+   font-size: 18px;
+  }
+    
+  @media only screen and (max-width: $mobile) {
+   display: block;
+   width: 100%;
+   font-size: 17px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgb(255 139 54 / 50%);
+  }
+}

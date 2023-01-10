@@ -157,6 +157,7 @@ body {
   background-color: var(--primary-bg-color);
   border: none;
   display: flex;
+  white-space: nowrap;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -364,7 +365,6 @@ body {
   background-color: var(--primary-bg-color);
   padding: 15px 12px;
   border-radius: 5px;
-  transition: transform 0.4s ease, width 0.4s ease;
 }
 @media only screen and (max-width: 768px) {
   .sitenav {
@@ -381,6 +381,7 @@ body {
     background-color: var(--primary-bg-color);
     box-shadow: -7px 0 10px rgba(0, 0, 0, 0.2);
     width: 65%;
+    transition: transform 0.4s ease, width 0.4s ease;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -645,6 +646,81 @@ body {
   color: var(--time-color);
   font-size: 14px;
   line-height: normal;
+}
+
+.notifications {
+  background: rgba(239, 186, 84, 0.18);
+  width: 100%;
+  padding: 25px 20px;
+  border-radius: 5px;
+  background-color: rgba(239, 186, 84, 0.18);
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .notifications {
+    flex-direction: column;
+  }
+}
+.notifications::before {
+  content: "";
+  display: inline-block;
+  background: url("../images/icon-notification.svg") no-repeat center/contain;
+  background-size: contain;
+  width: 31px;
+  height: 35px;
+  margin-right: 17px;
+}
+@media only screen and (max-width: 768px) {
+  .notifications::before {
+    display: none;
+    font-size: 17px;
+  }
+}
+
+.notifications__heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+  margin-right: auto;
+  transition: font-size 0.4s ease;
+}
+@media only screen and (max-width: 768px) {
+  .notifications__heading {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .notifications__heading {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.notifications__btn {
+  padding: 8px;
+  color: var(--primary-bg-color);
+  font-weight: 500;
+  font-size: 20px;
+  transition: font-size 0.4s ease, box-shadow 0.3s ease;
+  background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+}
+@media only screen and (max-width: 768px) {
+  .notifications__btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .notifications__btn {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+  }
+}
+.notifications__btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 139, 54, 0.5);
 }
 
 /* SITE-FOOTER */
