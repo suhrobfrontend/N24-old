@@ -342,6 +342,13 @@ body {
   padding: 15px 12px;
   border-radius: 5px;
 }
+@media only screen and (max-width: 768px) {
+  .sitenav {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+}
 
 .sitenav__list {
   display: flex;

@@ -179,6 +179,12 @@
   background-color: var(--primary-bg-color);
   padding: 15px 12px;
   border-radius: 5px;
+
+  @media only screen and (max-width: $tablet) {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
 }
 
 .sitenav__list {
