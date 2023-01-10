@@ -175,12 +175,16 @@ body {
 }
 
 .logo__link {
+  padding: 3px 7px;
+  border-radius: 5px;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
   display: flex;
 }
 
 .logo__img {
-  width: 320px;
-  height: 50px;
+  width: 306px;
+  height: 33px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -255,18 +259,19 @@ body {
 /* SITENAV */
 .sitenav {
   background-color: var(--primary-bg-color);
-  padding: 20px 24px;
+  padding: 15px 12px;
   border-radius: 5px;
 }
 
 .sitenav__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.sitenav__item:not(:last-child) {
-  margin-right: 25px;
+.sitenav__item {
+  margin: 5px 12px;
 }
 
 .sitenav__link {
