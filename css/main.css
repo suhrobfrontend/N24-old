@@ -572,7 +572,7 @@ body {
     width: 100%;
     border: none;
     padding: 15px 0;
-    border-bottom: 2px solid #f4ccd1;
+    border-top: 2px solid #f4ccd1;
   }
 }
 .covid-info__item::before {
