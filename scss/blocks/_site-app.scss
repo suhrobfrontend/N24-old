@@ -1,0 +1,95 @@
+.site-app {
+  padding: 64px 20px 64px 245px;
+  background: var(--main-bg-color) url("../../images/site-app-bg.png") no-repeat 20px bottom;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+    
+  @media only screen and (max-width: $tablet) {
+   background-size: 150px;
+   padding-left: 170px;
+   background-position: 10px bottom;
+  }
+
+    
+  @media only screen and (max-width: $mobile) {
+    background-image: none;
+    padding: 15px;
+    justify-content: center;
+   }
+}
+
+.site-app__content {
+  max-width: 530px;
+  margin-right: auto;
+
+  @media only screen and (max-width: $tablet-l) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+      
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+   }
+}
+
+.site-app__heading {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 22px;
+  }
+}
+
+.site-app__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--secondary-text-color);
+
+  
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 17px;
+  }
+}
+
+.site-app__link {
+  margin-left: 15px;
+  display: flex;
+
+    
+  @media only screen and (max-width: $tablet-l) {
+   margin-left: 0;
+
+   &:not(:last-child) {
+    margin-right: 15px;
+   }
+  }
+
+  
+  @media only screen and (max-width: $mobile) {
+    margin: 10px;
+  }
+}
+
+.site-app__img {
+  max-width: 164px;
+  width: 100%;
+  height: auto;
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 130px;
+  }
+}
