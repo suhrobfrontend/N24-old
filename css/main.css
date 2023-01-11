@@ -818,6 +818,7 @@ body {
 }
 
 .card-news-list {
+  position: relative;
   display: flex;
   align-items: flex-start;
 }
@@ -916,6 +917,16 @@ body {
 }
 .card-news-list__link:hover {
   color: var(--accent-color);
+}
+.card-news-list__link::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
 }
 
 .card-news-list__text {
