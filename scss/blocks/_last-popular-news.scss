@@ -14,11 +14,9 @@
 .news-list {
   max-width: 794px;
   margin-bottom: 38px;
-  margin-right: 20px;
 
   @media only screen and (max-width: $tablet-l) {
    max-width: none;
-   margin-right: 0;
   }
 }
 
@@ -203,6 +201,7 @@
 /* POPULAR NEWS */
 .popular-news {
   margin-top: 8px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   max-width: 386px;
@@ -211,6 +210,7 @@
   @media only screen and (max-width: $tablet-l) {
     max-width: none;
     width: 100%;
+    margin-left: 0;
    }
 }
 
