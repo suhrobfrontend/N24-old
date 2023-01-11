@@ -39,12 +39,12 @@
         </ul>
 
         <!-- SEARCH-BUTTON -->
-        <button class="button search-button">
+        <button class="btn-toggler search-button">
           <span class="search-button__inner"></span>
         </button>
 
         <!-- LANGUAGE TOGGLER -->
-        <button class="button language-toggler">
+        <button class="btn-toggler language-toggler">
           <div class="language-toggler__inner">РУ</div>
         </button>
 
@@ -143,9 +143,11 @@
         <div class="news-grid">
           <!-- NEWS GRID ITEM -->
           <article class="news-grid__item news-card">
-            <img class="news-card__img" src="images/sardoba-prezident.jpg" alt="Мирзиёев рассказал, зачем было построено
-            Сардобинское водохранилище" width="386" height="190"
-              srcset="images/sardoba-prezident.jpg 1x, images/sardoba-prezident@2x.jpg 2x">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/sardoba-prezident.jpg" alt="Мирзиёев рассказал, зачем было построено
+                Сардобинское водохранилище" width="386" height="190"
+                srcset="images/sardoba-prezident.jpg 1x, images/sardoba-prezident@2x.jpg 2x">
+            </div>
             <h3 class="news-card__heading">
               <a class="news-card__link" href="article.html">
                 Мирзиёев рассказал, зачем было построено Сардобинское водохранилище
@@ -156,8 +158,11 @@
 
           <!-- NEWS GRID ITEM -->
           <article class="news-grid__item news-card">
-            <img class="news-card__img" src="images/quarantine.jpg" alt="Карантин в Узбекистане продлен до 1 июня"
-              width="386" height="190" srcset="images/quarantine.jpg 1x, images/quarantine@2x.jpg 2x">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/quarantine.jpg" alt="Мирзиёев рассказал, зачем было построено
+                Сардобинское водохранилище" width="386" height="190"
+                srcset="images/quarantine.jpg 1x, images/quarantine@2x.jpg 2x">
+            </div>
             <h3 class="news-card__heading">
               <a class="news-card__link" href="article.html">
                 Карантин в Узбекистане продлен до 1 июня
@@ -168,8 +173,10 @@
 
           <!-- NEWS GRID ITEM -->
           <article class="news-grid__item news-card">
-            <img class="news-card__img" src="images/sardoba.jpg" alt="Обмелевшая Сардоба: стихия или
-            человеческий фактор" width="386" height="190" srcset="images/sardoba.jpg 1x, images/sardoba@2x.jpg 2x">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/sardoba.jpg" alt="Обмелевшая Сардоба: стихия или
+              человеческий фактор" width="386" height="190" srcset="images/sardoba.jpg 1x, images/sardoba@2x.jpg 2x">
+            </div>
             <h3 class="news-card__heading">
               <a class="news-card__link" href="article.html">
                 Обмелевшая Сардоба: стихия или человеческий фактор?
@@ -180,9 +187,11 @@
 
           <!-- NEWS GRID ITEM -->
           <article class="news-grid__item news-card">
-            <img class="news-card__img" src="images/info-sardoba.jpg" alt="Следствие проверяет четыре версии
-            прорыва Сардобинской плотины" width="386" height="190"
-              srcset="images/info-sardoba.jpg 1x, images/info-sardoba@2x.jpg 2x">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/info-sardoba.jpg" alt="Следствие проверяет четыре версии
+              прорыва Сардобинской плотины" width="386" height="190"
+                srcset="images/info-sardoba.jpg 1x, images/info-sardoba@2x.jpg 2x">
+            </div>
             <h3 class="news-card__heading">
               <a class="news-card__link" href="article.html">
                 Следствие проверяет четыре версии прорыва Сардобинской плотины
@@ -193,8 +202,10 @@
 
           <!-- NEWS GRID ITEM -->
           <article class="news-grid__item news-card">
-            <img class="news-card__img" src="images/covid-enfected.jpg" alt="Выявлено еще 7 случаев коронавируса"
-              width="386" height="190" srcset="images/covid-enfected.jpg 1x, images/covid-enfected@2x.jpg 2x">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/covid-enfected.jpg" alt="Выявлено еще 7 случаев коронавируса"
+                width="386" height="190" srcset="images/covid-enfected.jpg 1x, images/covid-enfected@2x.jpg 2x">
+            </div>
             <h3 class="news-card__heading">
               <a class="news-card__link" href="article.html">
                 Выявлено еще 7 случаев коронавируса
@@ -205,8 +216,10 @@
 
           <!-- NEWS GRID ITEM -->
           <article class="news-grid__item news-card">
-            <img class="news-card__img" src="images/stop-quarantine.jpg" alt="Итоги второго месяца карантина"
-              width="386" height="190" srcset="images/stop-quarantine.jpg 1x, images/stop-quarantine@2x.jpg 2x">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/stop-quarantine.jpg" alt="Итоги второго месяца карантина"
+                width="386" height="190" srcset="images/stop-quarantine.jpg 1x, images/stop-quarantine@2x.jpg 2x">
+            </div>
             <h3 class="news-card__heading"><a class="news-card__link" href="article.html">Итоги второго месяца
                 карантина</a></h3>
             <time datetime="2020-05-16T05:28" class="news-card__time">05:28 / 16.05.2020</time>
@@ -221,6 +234,200 @@
         <button class="button notifications__btn" type="button">Включит уведомления!</button>
       </section>
       <!-- /NOTIFICATIONS -->
+
+
+      <div class="news-wrapper">
+        <!-- NEWS-LIST -->
+        <section class="news-list">
+          <h2 class="news-list__heading">Последние новости</h2>
+          <div class="news-list__cards">
+
+            <!-- CARD NEWS LIST -->
+            <article class="news-list__card card-news-list">
+              <div class="card-news-list__img-wrapper">
+                <img class="card-news-list__img" src="images/sardoba-uz.jpg"
+                  alt="По факту прорыва Сардобинского водохранилища возбуждено уголовное дело" width="242" height="143"
+                  srcset="images/sardoba-uz.jpg 1x, images/sardoba-uz@2x.jpg 2x">
+              </div>
+              <div class="card-news-list__content">
+                <h3 class="card-news-list__title">
+                  <a class="card-news-list__link" href="article.html">
+                    По факту прорыва Сардобинского водохранилища возбуждено уголовное дело
+                  </a>
+                </h3>
+                <p class="card-news-list__text">
+                  После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                </p>
+                <tme datetime="2020-05-15T11:31" class="card-news-list__time">
+                  11:31 / 15.05.2020
+                </tme>
+              </div>
+            </article>
+
+            <!-- CARD NEWS LIST -->
+            <article class="news-list__card card-news-list">
+              <div class="card-news-list__img-wrapper">
+                <img class="card-news-list__img" src="images/prezident-uz.jpg"
+                  alt="Мирзиёев: «Нам следовало бы принять некоторые правила карантина как часть повседневной жизни»"
+                  width="242" height="143" srcset="images/prezident-uz.jpg 1x, images/prezident-uz@2x.jpg 2x">
+              </div>
+              <div class="card-news-list__content">
+                <h3 class="card-news-list__title">
+                  <a class="card-news-list__link" href="article.html">
+                    Мирзиёев: «Нам следовало бы принять некоторые правила карантина как часть повседневной жизни»
+                  </a>
+                </h3>
+                <p class="card-news-list__text">
+                  Президент Узбекистана заявил, что после того, как угроза коронавируса исчезнет, в стране следовало бы
+                  принять некоторые правила периода карантина как часть своей повседневной жизни.
+                </p>
+                <tme datetime="2020-05-15T11:31" class="card-news-list__time">
+                  11:31 / 15.05.2020
+                </tme>
+              </div>
+            </article>
+
+            <!-- CARD NEWS LIST -->
+            <article class="news-list__card card-news-list">
+              <div class="card-news-list__img-wrapper">
+                <img class="card-news-list__img" src="images/e-ticket.jpg"
+                  alt="В Ташкенте планируют ввести новую систему электронных проездных билетов" width="242" height="143"
+                  srcset="images/e-ticket.jpg 1x, images/e-ticket@2x.jpg 2x">
+              </div>
+              <div class="card-news-list__content">
+                <h3 class="card-news-list__title">
+                  <a class="card-news-list__link" href="article.html">
+                    В Ташкенте планируют ввести новую систему электронных проездных билетов
+                  </a>
+                </h3>
+                <p class="card-news-list__text">
+                  Целью этих изменений является максимально возможное сокращение количества других маршрутов на улицах,
+                  где проходят основные маршруты.
+                </p>
+                <tme datetime="2020-05-15T11:31" class="card-news-list__time">
+                  11:31 / 15.05.2020
+                </tme>
+              </div>
+            </article>
+
+            <!-- CARD NEWS LIST -->
+            <article class="news-list__card card-news-list">
+              <div class="card-news-list__img-wrapper">
+                <img class="card-news-list__img" src="images/sardoba-uz.jpg"
+                  alt="По факту прорыва Сардобинского водохранилища возбуждено уголовное дело" width="242" height="143"
+                  srcset="images/sardoba-uz.jpg 1x, images/sardoba-uz@2x.jpg 2x">
+              </div>
+              <div class="card-news-list__content">
+                <h3 class="card-news-list__title">
+                  <a class="card-news-list__link" href="article.html">
+                    По факту прорыва Сардобинского водохранилища возбуждено уголовное дело
+                  </a>
+                </h3>
+                <p class="card-news-list__text">
+                  После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе
+                  Генпрокуратуры Узбекистана.
+                </p>
+                <tme datetime="2020-05-15T11:31" class="card-news-list__time">
+                  11:31 / 15.05.2020
+                </tme>
+              </div>
+            </article>
+
+            <!-- CARD NEWS LIST -->
+            <article class="news-list__card card-news-list">
+              <div class="card-news-list__img-wrapper">
+                <img class="card-news-list__img" src="images/prezident-uz.jpg"
+                  alt="Мирзиёев: «Нам следовало бы принять некоторые правила карантина как часть повседневной жизни»"
+                  width="242" height="143" srcset="images/prezident-uz.jpg 1x, images/prezident-uz@2x.jpg 2x">
+              </div>
+              <div class="card-news-list__content">
+                <h3 class="card-news-list__title">
+                  <a class="card-news-list__link" href="article.html">
+                    Мирзиёев: «Нам следовало бы принять некоторые правила карантина как часть повседневной жизни»
+                  </a>
+                </h3>
+                <p class="card-news-list__text">
+                  Президент Узбекистана заявил, что после того, как угроза коронавируса исчезнет, в стране следовало бы
+                  принять некоторые правила периода карантина как часть своей повседневной жизни.
+                </p>
+                <tme datetime="2020-05-15T11:31" class="card-news-list__time">
+                  11:31 / 15.05.2020
+                </tme>
+              </div>
+            </article>
+
+            <!-- CARD NEWS LIST -->
+            <article class="news-list__card card-news-list">
+              <div class="card-news-list__img-wrapper">
+                <img class="card-news-list__img" src="images/e-ticket.jpg"
+                  alt="В Ташкенте планируют ввести новую систему электронных проездных билетов" width="242" height="143"
+                  srcset="images/e-ticket.jpg 1x, images/e-ticket@2x.jpg 2x">
+              </div>
+              <div class="card-news-list__content">
+                <h3 class="card-news-list__title">
+                  <a class="card-news-list__link" href="article.html">
+                    В Ташкенте планируют ввести новую систему электронных проездных билетов
+                  </a>
+                </h3>
+                <p class="card-news-list__text">
+                  Целью этих изменений является максимально возможное сокращение количества других маршрутов на улицах,
+                  где проходят основные маршруты.
+                </p>
+                <tme datetime="2020-05-15T11:31" class="card-news-list__time">
+                  11:31 / 15.05.2020
+                </tme>
+              </div>
+            </article>
+          </div>
+          <div class="news-list__btn-wrapper">
+            <button class="button news-list__btn">Больше новостей</button>
+          </div>
+        </section>
+        <!-- /NEWS-LIST -->
+
+        <!-- POPULAR NEWS -->
+        <section class="popular-news">
+          <div class="popular-news__item list-popular-news">
+            <h3 class="list-popular-news__title">Cамые популярные новости</h3>
+            <div class="list-popular-news__item">
+              <p class="list-popular-news__text">
+                <a class="list-popular-news__link" href="article.html">По факту прорыва Сардобинского водохранилища
+                  возбуждено уголовное дело</a>
+              </p>
+              <time class="list-popular-news__time" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
+            </div>
+            <div class="list-popular-news__item">
+              <p class="list-popular-news__text">
+                <a class="list-popular-news__link" href="article.html">По факту прорыва Сардобинского водохранилища
+                  возбуждено уголовное дело</a>
+              </p>
+              <time class="list-popular-news__time" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
+            </div>
+            <div class="list-popular-news__item">
+              <p class="list-popular-news__text">
+                <a class="list-popular-news__link" href="article.html">По факту прорыва Сардобинского водохранилища
+                  возбуждено уголовное дело</a>
+              </p>
+              <time class="list-popular-news__time" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
+            </div>
+            <div class="list-popular-news__item">
+              <p class="list-popular-news__text">
+                <a class="list-popular-news__link" href="article.html">По факту прорыва Сардобинского водохранилища
+                  возбуждено уголовное дело</a>
+              </p>
+              <time class="list-popular-news__time" datetime="2020-05-15T11:31">11:31 / 15.05.2020</time>
+            </div>
+          </div>
+          <aside class="popular-news__item popular-news-ads">
+            <a class="popular-news-ads__link" href="#">
+              <img class="popular-news-ads__img" src="images/ucell-ads.jpg" alt="ucell ads" width="386" height="477"
+                srcset="images/ucell-ads.jpg 1x, images/ucell-ads@2x.jpg 2x">
+            </a>
+          </aside>
+        </section>
+        <!-- /POPULAR NEWS -->
+      </div>
 
     </div>
   </main>

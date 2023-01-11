@@ -108,12 +108,17 @@ body {
 
 /* BUTTON */
 .button {
-  background-color: var(--primary-bg-color);
   border: none;
-  display: flex;
+  display: inline-block;
   white-space: nowrap;
   border-radius: 5px;
   cursor: pointer;
+  background-color: var(--secondary-bg-color);
+  padding: 10px 31px;
+  color: var(--primary-bg-color);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
 }
 
 /* TEG SUB BUTTON */

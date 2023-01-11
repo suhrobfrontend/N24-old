@@ -102,6 +102,15 @@
 
 
 /* LANGUAGE TOGGLE */
+
+.btn-toggler {
+  background-color: var(--primary-bg-color);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 .language-toggler {
   margin-right: 22px;
   padding: 10px 7px;
