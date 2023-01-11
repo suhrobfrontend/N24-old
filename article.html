@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N24 | Bosh sahifa</title>
+  <title>Шавкат Мирзиёев строго предупредил хокимов всех уровней - N24</title>
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg">
 
@@ -39,17 +39,17 @@
         </ul>
 
         <!-- SEARCH-BUTTON -->
-        <button class="button search-button">
+        <button class="btn-toggler search-button">
           <span class="search-button__inner"></span>
         </button>
 
         <!-- LANGUAGE TOGGLER -->
-        <button class="button language-toggler">
+        <button class="btn-toggler language-toggler">
           <div class="language-toggler__inner">РУ</div>
         </button>
 
         <!-- SITE-HEADER LINK -->
-        <a class="tg-btn site-header__link" href="">
+        <a class="tg-btn site-header__link" href="https://tme.to/suhrobbek_soatov">
           <span class="site-header__link-inner">Подписатся</span>
         </a>
 
@@ -62,34 +62,34 @@
       <nav class="sitenav">
         <ul class="sitenav__list">
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Узбекистана</a>
+            <a class="sitenav__link" href="list.html">Узбекистана</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Мир</a>
+            <a class="sitenav__link" href="list.html">Мир</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Экономика</a>
+            <a class="sitenav__link" href="list.html">Экономика</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Политика</a>
+            <a class="sitenav__link sitenav__link--active" href="list.html">Политика</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Общество</a>
+            <a class="sitenav__link" href="list.html">Общество</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Технологии</a>
+            <a class="sitenav__link" href="list.html">Технологии</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Спорт</a>
+            <a class="sitenav__link" href="list.html">Спорт</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Культура</a>
+            <a class="sitenav__link" href="list.html">Культура</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Происшествия</a>
+            <a class="sitenav__link" href="list.html">Происшествия</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Туризм</a>
+            <a class="sitenav__link" href="list.html">Туризм</a>
           </li>
         </ul>
       </nav>
@@ -108,33 +108,60 @@
   <!-- MAIN CONTENT -->
   <main class="main-content">
     <div class="container">
-      <!-- COVID INFO -->
-      <section class="covid-info">
-        <div>
-          <h2 class="covid-info__heading">Коронавирус COVID-19 в Узбекистане</h2>
+
+
+      <!-- NEWS -->
+      <section class="news">
+        <h2 class="visually-hidden">Важные новости</h2>
+        <!-- NEWS GRID -->
+        <div class="news-grid">
+
+          <!-- NEWS GRID ITEM -->
+          <article class="news-grid__item news-card">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/sardoba-prezident.jpg" alt="Мирзиёев рассказал, зачем было построено
+                Сардобинское водохранилище" width="386" height="190"
+                srcset="images/sardoba-prezident.jpg 1x, images/sardoba-prezident@2x.jpg 2x">
+            </div>
+            <h3 class="news-card__heading">
+              <a class="news-card__link" href="article.html">
+                Мирзиёев рассказал, зачем было построено Сардобинское водохранилище
+              </a>
+            </h3>
+            <time datetime="2020-05-16T05:28" class="news-card__time">05:28 / 16.05.2020</time>
+          </article>
+
+          <!-- NEWS GRID ITEM -->
+          <article class="news-grid__item news-card">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/quarantine.jpg" alt="Мирзиёев рассказал, зачем было построено
+                Сардобинское водохранилище" width="386" height="190"
+                srcset="images/quarantine.jpg 1x, images/quarantine@2x.jpg 2x">
+            </div>
+            <h3 class="news-card__heading">
+              <a class="news-card__link" href="article.html">
+                Карантин в Узбекистане продлен до 1 июня
+              </a>
+            </h3>
+            <time datetime="2020-05-16T05:28" class="news-card__time">05:28 / 16.05.2020</time>
+          </article>
+
+          <!-- NEWS GRID ITEM -->
+          <article class="news-grid__item news-card">
+            <div class="news-card__img-wrapper">
+              <img class="news-card__img" src="images/sardoba.jpg" alt="Обмелевшая Сардоба: стихия или
+              человеческий фактор" width="386" height="190" srcset="images/sardoba.jpg 1x, images/sardoba@2x.jpg 2x">
+            </div>
+            <h3 class="news-card__heading">
+              <a class="news-card__link" href="article.html">
+                Обмелевшая Сардоба: стихия или человеческий фактор?
+              </a>
+            </h3>
+            <time datetime="2020-05-16T05:28" class="news-card__time">05:28 / 16.05.2020</time>
+          </article>
         </div>
-        <ul class="covid-info__list">
-          <li class="covid-info__item covid-info__item--enfected">
-            <div>
-              <h3 class="covid-info__title covid-info__title--red">Инфицированы</h3>
-              <b class="covid-info__bold-text">2753</b>
-            </div>
-          </li>
-          <li class="covid-info__item covid-info__item--recovered">
-            <div>
-              <h3 class="covid-info__title covid-info__title--green">Выздоровели</h3>
-              <b class="covid-info__bold-text">2245</b>
-            </div>
-          </li>
-          <li class="covid-info__item covid-info__item--dead">
-            <div>
-              <h3 class="covid-info__title">Умерли</h3>
-              <b class="covid-info__bold-text">12</b>
-            </div>
-          </li>
-        </ul>
       </section>
-      <!-- /COVID INFO -->
+      <!-- /NEWS -->
     </div>
   </main>
   <!-- /MAIN CONTENT -->
@@ -149,7 +176,7 @@
         <p class="site-footer__sub-text">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних
           новостей:</p>
         <!-- SITE-FOOTER LINK -->
-        <a class="tg-btn site-footer__link" href="">
+        <a class="tg-btn site-footer__link" href="https://tme.to/suhrobbek_soatov">
           <span class="site-footer__link-inner">Подписатся</span>
         </a>
       </div>
