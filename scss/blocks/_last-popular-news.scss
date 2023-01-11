@@ -44,9 +44,13 @@
 }
 
 .card-news-list {
-  position: relative;
   display: flex;
+  position: relative;
   align-items: flex-start;
+
+  @media only screen and (max-width: $desktop) {
+    align-items: stretch;
+  }
 
   @media only screen and (max-width: $mobile) {
     flex-direction: column;
@@ -103,7 +107,11 @@
   height: auto;
   transition: all .5s ease;
   object-fit: cover;
-
+  object-position: center;
+    
+  @media only screen and (max-width: $desktop) {
+    height: 100%;
+   }
     
   @media only screen and (max-width: $mobile) {
     width: 100%;

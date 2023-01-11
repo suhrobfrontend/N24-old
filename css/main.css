@@ -818,9 +818,14 @@ body {
 }
 
 .card-news-list {
-  position: relative;
   display: flex;
+  position: relative;
   align-items: flex-start;
+}
+@media only screen and (max-width: 1240px) {
+  .card-news-list {
+    align-items: stretch;
+  }
 }
 @media only screen and (max-width: 576px) {
   .card-news-list {
@@ -876,6 +881,13 @@ body {
   transition: all 0.5s ease;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media only screen and (max-width: 1240px) {
+  .card-news-list__img {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .card-news-list__img {
