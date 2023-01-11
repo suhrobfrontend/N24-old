@@ -50,6 +50,11 @@ body {
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
+
+  
+  @media only screen and (max-width: $tablet) {
+   margin-top: 68px;
+  }
 }
 
 /* CONTAINER */
