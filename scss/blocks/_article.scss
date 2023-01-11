@@ -70,6 +70,7 @@
 /* ARTICLE TAGS */
 .article__tags {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -78,8 +79,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
+  margin: 3px;
 
   &:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 }
