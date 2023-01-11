@@ -468,6 +468,9 @@ body {
 .sitenav__link {
   color: var(--navbar-text-color);
 }
+.sitenav__link--active {
+  color: var(--accent-color);
+}
 .sitenav__link:hover {
   color: var(--accent-color);
 }
