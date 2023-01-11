@@ -1012,6 +1012,11 @@ body {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .list-popular-news__title {
+    text-align: center;
+  }
+}
 
 .list-popular-news__item {
   padding-bottom: 14px;

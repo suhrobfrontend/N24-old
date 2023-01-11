@@ -235,6 +235,10 @@
   @media only screen and (max-width: $tablet) {
     font-size: 18px; 
   }
+  
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .list-popular-news__item {
