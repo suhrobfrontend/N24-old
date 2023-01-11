@@ -572,6 +572,8 @@ body {
     width: 100%;
     border: none;
     padding: 15px 0;
+  }
+  .covid-info__item:not(:last-child) {
     border-top: 2px solid #f4ccd1;
   }
 }

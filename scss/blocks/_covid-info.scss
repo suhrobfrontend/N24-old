@@ -75,7 +75,10 @@
     width: 100%;
     border: none;
     padding: 15px 0;
-    border-top: 2px solid #f4ccd1;
+    
+    &:not(:last-child) {
+      border-top: 2px solid #f4ccd1;
+    }
   }
 
   &::before {
