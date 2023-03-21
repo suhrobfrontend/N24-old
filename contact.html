@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__container container">
+        <div class="site-header__top">
+          <!-- LOGO -->
+          <a class="site-header__logo logo" href="index.html">
+            <img
+              class="logo__img"
+              src="images/logo.svg"
+              alt="N24 logo"
+              width="306"
+              height="33"
+            />
+          </a>
+
+          <!-- CURRENCY RATES -->
+          <ul class="currency-rates">
+            <li class="currency-rates__item">
+              <b class="currency-rates__bolder-text">$</b>
+              <span class="currency-rates__text">11284.75</span>
+            </li>
+            <li class="currency-rates__item">
+              <b class="currency-rates__bolder-text">P</b>
+              <span class="currency-rates__text">162.10</span>
+            </li>
+          </ul>
+
+          <!-- SEARCH-BUTTON -->
+          <button class="btn-toggler search-button">
+            <span class="search-button__inner"></span>
+          </button>
+
+          <!-- LANGUAGE TOGGLER -->
+          <button class="btn-toggler language-toggler">
+            <div class="language-toggler__inner">РУ</div>
+          </button>
+
+          <!-- SITE-HEADER LINK -->
+          <a
+            class="tg-btn site-header__link"
+            href="https://tme.to/suhrobbek_soatov"
+          >
+            <span class="site-header__link-inner">Подписатся</span>
+          </a>
+
+          <!-- SITE HEADER TOGGLER -->
+          <button class="site-header__toggler">Меню</button>
+        </div>
+
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Узбекистана</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Мир</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Экономика</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link sitenav__link--active" href="list.html"
+                >Политика</a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Общество</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Технологии</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Спорт</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Культура</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Происшествия</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="list.html">Туризм</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="container">
+        <h2 class="contact__title">Напишите нам</h2>
+        <section class="contact">
+          <div class="contact__inner">
+            <form class="contact__form form-contact">
+              <input
+                class="form-contact__field"
+                placeholder="Имя"
+                name="full_name"
+                aria-label="Имя"
+                type="text"
+              />
+              <input
+                class="form-contact__field"
+                placeholder="Электронная почта"
+                name="email"
+                aria-label="Электронная почта"
+                type="text"
+              />
+              <input
+                class="form-contact__field"
+                placeholder="Номер телефона"
+                name="number"
+                aria-label="Номер телефона"
+                type="text"
+              />
+              <input
+                class="form-contact__field"
+                placeholder="Тема"
+                name="subject"
+                aria-label="Тема"
+                type="text"
+              />
+              <textarea
+                class="form-contact__field form-contact__field--textarea"
+                placeholder="Текст"
+                name="message"
+                aria-label="Текст"
+              ></textarea>
+              <label
+                class="form-contact__mini-field form-contact__mini-field--label"
+                for="form-contact-file"
+                >Прикрепить файл</label
+              >
+              <input
+                type="file"
+                name="file"
+                class="form-contact__mini-field--file visually-hidden"
+                id="form-contact-file"
+              />
+              <input
+                type="text"
+                placeholder="Код"
+                placeholder="Код"
+                name="code"
+                aria-label="Код"
+                class="form-contact__mini-field"
+              />
+              <button class="button form-contact__submit-btn" type="submit">
+                Отправить
+              </button>
+            </form>
+            <div class="contact__info info-contact">
+              <h3 class="info-contact__title">NAMANGANLIKLAR24</h3>
+              <ul class="info-contact__list">
+                <li class="info-contact__item">
+                  <p class="info-contact__text">Электронная почта</p>
+                  <a
+                    class="info-contact__link"
+                    href="mailto:info@namanganliklar24.uz"
+                    >info@namanganliklar24.uz</a
+                  >
+                </li>
+                <li class="info-contact__item">
+                  <p class="info-contact__text">Социальные сети</p>
+                  <div class="info-contact__links">
+                    <a
+                      class="info-contact__link"
+                      href="https://tme.to/suhrobbek_soatov"
+                    >
+                      <img
+                        src="images/icon-facebook.svg"
+                        alt="icon facebook"
+                        width="32"
+                        height="32"
+                      />
+                    </a>
+                    <a
+                      class="info-contact__link"
+                      href="https://tme.to/suhrobbek_soatov"
+                    >
+                      <img
+                        src="images/icon-twitter.svg"
+                        alt="icon twitter"
+                        width="32"
+                        height="32"
+                      />
+                    </a>
+                    <a
+                      class="info-contact__link"
+                      href="https://tme.to/suhrobbek_soatov"
+                    >
+                      <img
+                        src="images/icon-ok.svg"
+                        alt="icon ok"
+                        width="32"
+                        height="32"
+                      />
+                    </a>
+                  </div>
+                </li>
+                <li class="info-contact__item">
+                  <p class="info-contact__text">Телеграм канал</p>
+                  <a
+                    class="info-contact__link button"
+                    href="https://tme.to/suhrobbek_soatov"
+                  >
+                    <img src="images/icon-telegram-white.svg" alt="" />
+                    <span>Подписатся</span></a
+                  >
+                </li>
+                <li class="info-contact__item">
+                  <p class="info-contact__text">Мобильная приложение</p>
+                  <div class="info-contact__links">
+                    <a
+                      class="info-contact__link"
+                      href="https://tme.to/suhrobbek_soatov"
+                    >
+                      <img
+                        src="images/icon-google-play.svg"
+                        alt="icon google play"
+                        width="111"
+                        height="33"
+                      />
+                    </a>
+                    <a
+                      class="info-contact__link"
+                      href="https://tme.to/suhrobbek_soatov"
+                    >
+                      <img
+                        src="images/icon-app-store.svg"
+                        alt="icon app store"
+                        width="111"
+                        height="33"
+                      />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- /MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <a class="site-footer__logo" href="#">
+            <img
+              class="site-footer__logo-img"
+              src="./images/logo-white.svg"
+              alt="N24 logo white"
+              width="173"
+              height="21"
+            />
+          </a>
+          <p class="site-footer__sub-text">
+            Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых
+            последних новостей:
+          </p>
+          <!-- SITE-FOOTER LINK -->
+          <a
+            class="tg-btn site-footer__link"
+            href="https://tme.to/suhrobbek_soatov"
+          >
+            <span class="site-footer__link-inner">Подписатся</span>
+          </a>
+        </div>
+
+        <div class="site-footer__bottom">
+          <!-- SITE FOOTER INFO -->
+          <div class="site-footer__info info-footer">
+            <h2 class="info-footer__heading">О сайте</h2>
+            <p class="info-footer__description">
+              Воспроизводство, копирование, тиражирование, распростране ние и
+              иное использование информации с сайта «NAMANGANLIKLAR24.UZ»
+              возможно только с предварительного письменного разрешения
+              редакции.
+            </p>
+          </div>
+
+          <!-- SITE FOOTER NAV -->
+          <ul class="site-footer__nav">
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Информация о сайте </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Напишите нам </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Реклама </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Прислать новость </a>
+            </li>
+          </ul>
+
+          <ul class="site-footer__nav">
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Информация о сайте </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Напишите нам </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Реклама </a>
+            </li>
+            <li class="site-footer__nav-item">
+              <a class="site-footer__nav-link" href="#"> Прислать новость </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

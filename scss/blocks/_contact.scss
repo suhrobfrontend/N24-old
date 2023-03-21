@@ -1,0 +1,147 @@
+/* CONTACT */
+.contact__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column-reverse;
+  }
+}
+
+
+.contact__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+/* FORM-CONTACT */
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 100%;
+  }
+}
+
+.form-contact__field, .form-contact__mini-field {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 15px 16px;
+  background: rgba(241, 241, 241, 0.3);
+  border: 2px solid rgba(41, 82, 148, 0.3);
+
+  &::placeholder {
+    color: #888888;
+  }
+}
+
+.form-contact__field {
+  &--textarea {
+    resize: vertical;
+    min-height: 250px;
+  }
+}
+
+.form-contact__mini-field {
+
+  max-width: 220px;
+
+  &--label {
+    color: #888888;
+    user-select: none;
+    background: url("../../images/icon-file.svg") no-repeat calc(100% - 20px) center;
+  }
+  
+  &--file {
+    margin-bottom: 0;
+  }
+}
+
+.form-contact__submit-btn {
+  margin-right: auto;
+  min-width: 220px;
+}
+
+/* INFO-CONTACT */
+.info-contact {
+  max-width: 510px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #BCC3CD;
+  padding: 23px 20px;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 100%;
+  }
+}
+
+.info-contact__title {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #295091;
+  text-align: right;
+  margin-bottom: 21px;
+
+  
+  @media only screen and (max-width: $mobile) {
+   text-align: center;}
+}
+
+.info-contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  white-space: nowrap;
+  
+  &:not(:last-child) {
+    margin-bottom: 18px;
+
+    @media only screen and (max-width: $mobile) {
+      margin-bottom: 24px;
+     }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.info-contact__links {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.info-contact__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.button {
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+    }
+  }
+}
+.info-contact__links {
+}
+.button {
+}
