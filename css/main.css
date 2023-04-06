@@ -103,6 +103,9 @@ body {
     margin-top: 68px;
   }
 }
+body.hidden {
+  overflow: hidden;
+}
 
 /* CONTAINER */
 .container {

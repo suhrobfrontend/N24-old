@@ -54,6 +54,10 @@ body {
   @media only screen and (max-width: $tablet) {
     margin-top: 68px;
   }
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 /* CONTAINER */
