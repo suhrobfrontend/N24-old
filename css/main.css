@@ -1571,31 +1571,6 @@ body.hidden {
   }
 }
 
-/* SITE-FOOTER LINK */
-.site-footer__link {
-  color: var(--secondary-bg-color);
-  background-color: var(--primary-bg-color);
-}
-@media only screen and (max-width: 576px) {
-  .site-footer__link {
-    order: 1;
-  }
-}
-
-.site-footer__link-inner {
-  display: flex;
-  align-items: center;
-}
-.site-footer__link-inner::before {
-  content: "";
-  display: inline-block;
-  background: url("../images/icon-telegram-blue.svg") no-repeat center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  margin-right: 7px;
-}
-
 /* SITE FOOTER BOTTOM */
 .site-footer__bottom {
   padding: 12px 0;
