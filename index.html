@@ -19,7 +19,7 @@
       <div class="site-header__container container">
         <div class="site-header__top">
           <!-- LOGO -->
-          <a class="site-header__logo logo" href="index.html">
+          <a class="site-header__logo logo" href="/">
             <img
               class="logo__img"
               src="images/logo.svg"
@@ -53,7 +53,7 @@
 
           <!-- SITE-HEADER LINK -->
           <a
-            class="tg-btn site-header__link"
+            class="button-telegram site-header__link"
             href="https://tme.to/suhrobbek_soatov"
           >
             <span class="site-header__link-inner">Подписатся</span>
@@ -318,7 +318,11 @@
           <h2 class="notifications__heading">
             Хотите узнать новости первыми? подключите уведомления!
           </h2>
-          <button class="button notifications__btn" type="button">
+          <button
+            class="button notifications__btn"
+            type="button"
+            data-modal-open
+          >
             Включит уведомления!
           </button>
         </section>
@@ -717,6 +721,31 @@
       </div>
     </footer>
     <!-- /FOOTER -->
+
+    <!-- MODAL -->
+    <section class="modal" data-modal>
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <h2 class="visually-hidden">Уведомления</h2>
+          <button class="modal__close" data-modal-close>
+            <img src="images/icon-close.svg" alt="" width="16" height="16" />
+          </button>
+          <p class="modal__lead-text">
+            Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых
+            последних новостей:
+          </p>
+          <div class="modal__actions">
+            <a
+              class="button-telegram"
+              href="https://tme.to/svkhrobbeck"
+              target="_blank"
+              >Подписатся</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /MODAL -->
 
     <!-- SCRIPTS -->
     <script src="./js/main.js"></script>

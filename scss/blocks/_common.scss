@@ -9,7 +9,7 @@
   --secondary-text-color: #202020;
   --footer-color: #fff;
   --accent-color: #285193;
-  --accent-dark: #133c82; 
+  --accent-dark: #133c82;
   --primary-font-family: "Rubik", "Arial", sans-serif;
 }
 
@@ -52,7 +52,7 @@ body {
   flex-direction: column;
 
   @media only screen and (max-width: $tablet) {
-   margin-top: 68px;
+    margin-top: 68px;
   }
 }
 
@@ -109,7 +109,6 @@ body {
   overflow: hidden;
 }
 
-
 /* BUTTON */
 .button {
   border: none;
@@ -126,22 +125,31 @@ body {
 }
 
 /* TEG SUB BUTTON */
-.tg-btn {
+.button-telegram {
   padding: 9px 12px;
-  text-align: center;
+  font-weight: 500;
   display: inline-block;
   cursor: pointer;
-  font-weight: 500;
+  color: #fff;
+  border: none;
   border-radius: 5px;
-  transition: background-color .4s ease;
-}
+  display: flex;
+  align-items: center;
+  background-color: 37aee2;
+  background-image: linear-gradient(to right, #1e96c8 15%, #37aee2 85%);
+  transition: opacity 0.5s ease;
 
+  &:hover {
+    opacity: 0.7;
+  }
 
-/* RETINA DISPLAY */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
+  &::before {
+    content: "";
+    display: inline-block;
+    background: url("../images/icon-telegram-white.svg") no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
 }
